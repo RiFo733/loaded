@@ -1,0 +1,180 @@
+body {
+  padding-top: 56px;
+}
+  
+  
+#map {
+  height: 100%;
+  height: 50vh;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arvo', serif !important;
+}
+
+.flagButton {
+  font-size: 20px !important;
+}
+
+#logoImg {
+  max-width: 40%;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+}
+
+#sidebar.active {
+  margin-left: -190px;
+}
+
+.content {
+  width: 100%;
+  flex-wrap: wrap;
+  background-image: url(https://i.pinimg.com/originals/23/7f/8c/237f8c42f6600344a3f3d143704523bb.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover
+}
+
+.contentCol {
+  background-color: #808080;
+}
+
+.focusCol {
+  background-color: #6b6b6b;
+}
+
+.textDisplay {
+  background-color: #9a9a9a;
+  font-size: .7rem;
+}
+
+/* navbar style */
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #000000
+}
+
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  background: #808080;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #808080;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #808080;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color: #000000
+}
+#sidebar ul li a:hover {
+  color: #808080;
+  background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #808080;
+}
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #808080;
+}
+
+a {
+  color: #fff !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer {
+  background: #808080 !important;
+}
+
+#results-list{
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+  }
+}
+
+
+
+
+.enRouted:hover{
+transform: scale(1.008);
+background-color: #96969660;
+}
+.activ{
+background-color: #0d6fdea6;
+color: white
+}
+
